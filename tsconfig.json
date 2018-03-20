@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "module": "amd",
+      "sourceMap": true,
+      "target": "es5",
+      "noImplicitAny": false,
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "outDir": "./dist"
+    },
+    "include": [
+      "typings/**/*",
+      "src/**/*.ts"
+    ],
+    "exclude": [
+      "bower_components",
+      "node_modules",
+      "temp"
+    ]
+  }
