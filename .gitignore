@@ -1,0 +1,36 @@
+# Bower 安装的三方库文件
+#       bower 程序以及配置文件 bower.json 安装的一些三方库文件,如 jquery\lodash等.
+#       >bower install
+bower_components
+
+# 编译后发布的程序文件
+#       此文件夹中存放着编译后运行的网页程序,通过自动编译软件进行生成
+#       >npm run build
+dist
+
+# Node.js 安装的模块文件
+#       可通过 Node.js 自带包管理器 npm 以及配置文件 package.json 进行安装
+#       >npm install
+node_modules
+
+# 临时暂存文件
+#       用做存放临时测试或对比的文件
+temp
+
+# Typescript 类型定义文件夹
+#       可通过 Typings 工具以及 typings.json 配置位文件进行生成
+#       >typings install
+#   ！！现文件夹中包含自定义文件，由于此文件还处在变动期，暂未直接加入 github，所以不排除以下文件夹
+#typings
+
+# VS Code 配置文件夹
+.vscode
+
+# WEbStorm 配置文件夹
+.idea
+
+# 允许建立名为 Test 的 Widget,并不会被同步
+src/widgets/Test
+
+# 不排除Vender中的文件
+!vender/**/dist
