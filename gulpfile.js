@@ -29,9 +29,14 @@ gulp.task('sass', function () {
       .pipe(sass())
       .pipe(gulp.dest('./dist'));
   });
+// 把icon图标移入到编译后的文件中
+gulp.task('icon',function(){
+    gulp.src('src/vender/ico/icon.ico',{base:'src'})
+    .pipe(gulp.dest('./dist'));
+})
 
 // 默认命令
-gulp.task('default',['tsandjs','html','sass'])
+gulp.task('default',['tsandjs','html','sass','icon'])
 
 // 监视改动
 gulp.task('serve:watch', function () {
@@ -43,4 +48,5 @@ gulp.task('serve:watch', function () {
     gulp.watch("src/**/*.js",['js']).on('change', browserSync.reload);
     gulp.watch("src/**/*.ts",['ts']).on('change', browserSync.reload);
     gulp.watch("src/**/**/*.scss",['sass']).on('change', browserSync.reload);
+    gulp.watch("src/vender/ico/icon.ico",['icon']).on('change', browserSync.reload);
 });
