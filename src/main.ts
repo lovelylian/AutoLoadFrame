@@ -4,6 +4,7 @@ import LoadManager = require('./core/LoadManager');
 export = Main;
 class Main{
     loadConfig(){
+        
         (new LoadManager).load(config.appConfig);
     }
 }
