@@ -1,5 +1,5 @@
 import _ = require('lodash');
-import s = require("../widget/MenuBar/Widget");
+import s = require("../widget/SideBar/Widget");
 //typescript 里面添加requirejs，让其能在模块内使用
 declare var require:(moduleId:string) => any;
 export = LoadManager;

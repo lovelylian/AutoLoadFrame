@@ -5,6 +5,7 @@ class BaseWidget extends Base {
         super();
         this.start();
     }
+    // 初始化函数
     start(){
         console.log('this is basewidget');   
     }
