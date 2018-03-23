@@ -14,11 +14,10 @@ class LoadManager{
         this.loadWidget(config.loadOnStartWidgets);
   }
   private loadWidget(widgetConfig){
-        // var startWidget = widgetConfig.loadOnStartWidgets;
-        // startWidget.forEach(element => {
-        //    var mainUrl = element.url;
+        var startWidget = widgetConfig.loadOnStartWidgets;
+        startWidget.forEach(element => {
+           var mainUrl = element.url;
 
-        // });
-     var ss = new s(1);
+        });
   }
 }
