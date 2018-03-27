@@ -7,7 +7,7 @@ class BaseWidget extends Base {
     }
     // 初始化函数
     start(){
-        console.log('this is basewidget');   
+       console.log('test');
     }
     destroy(){
       

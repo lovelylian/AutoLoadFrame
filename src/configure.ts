@@ -14,22 +14,22 @@ var AppX = {
             {
                "name":"topBar",
                "description":"页面顶部菜单条",
-               "url":"./widget/topBar"
+               "url":"../widget/TopBar/Widget"
             },
             {
                 "name":"menuBar",
                 "description":"页面左侧菜单栏",
-                "url":"./widget/menuBar"
+                "url":"../widget/SideBar/Widget"
             },
             {
                 "name":"menuBar",
                 "description":"页面右侧内容区域",
-                "url":""
+                "url":"../widget/ContentDiv/Widget"
             },
             {
                 "name":"footerBar",
                 "description":"页面底部相关权利说明",
-                "url":"./widget/FooterBar"
+                "url":"../widget/FooterBar/Widget"
             }
         ],
         "menuBarContent":[

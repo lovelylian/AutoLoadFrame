@@ -1,9 +1,11 @@
 import _ = require('lodash');
-import s = require("../widget/SideBar/Widget");
 //typescript 里面添加requirejs，让其能在模块内使用
-declare var require:(moduleId:string) => any;
+///
+///
+declare var require:(moduleId,callback) => any;
 export = LoadManager;
 class LoadManager{
+
   // 加载配置文件
   public load(config){
         if(!config){
@@ -14,10 +16,11 @@ class LoadManager{
         this.loadWidget(config.loadOnStartWidgets);
   }
   private loadWidget(widgetConfig){
-        var startWidget = widgetConfig.loadOnStartWidgets;
-        startWidget.forEach(element => {
-           var mainUrl = element.url;
-
-        });
+            for(var i=0;i<widgetConfig.length;i++){
+                let modelUrl = widgetConfig[i].url;
+                   require([modelUrl],function(){
+                     new arguments[0](8);
+                   });
+            }
   }
 }
