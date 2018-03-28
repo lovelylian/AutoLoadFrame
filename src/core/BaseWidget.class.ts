@@ -6,11 +6,12 @@ class BaseWidget extends Base {
     constructor(parameters) {
         super();
         this.parameters = parameters;
-        this.start();
+        this.setStyleLink();
+        this.getHtmlTemplate();
     }
     // 初始化函数
     start(){
-       console.log('test');
+
     }
     destroy(){
       
@@ -25,8 +26,27 @@ class BaseWidget extends Base {
          }
     }
 
-    // 加载html模板
+    // 获取html模板
     getHtmlTemplate(){
-        
+        $.ajax({
+            url:this.parameters.url.replace(/\/*$/,"/")+this.parameters.main+".html",
+            success:function(data){
+                // 将加载的数据存入模板中
+                this.template= data;
+            }.bind(this),
+            error:function(error){
+                console.log("错误日志",error);
+            },
+            complete:function(){
+                this.start();
+            }.bind(this)
+        });
+    }
+
+    // 设置css连接
+    setStyleLink(){
+        // $("head").append('<link rel="stylesheet" href="'+this.parameters.url.replace(/\/*$/,"/")+'css/style.css">');
+        var test = $('<link href="./' +this.parameters.url.replace(/\/*$/,"/")+'css/style.css" rel="stylesheet" type="text/css"/>');
+        $($('head')[0]).append(test);
     }
 }

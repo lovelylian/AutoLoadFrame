@@ -7,6 +7,5 @@ class ContentDiv extends BaseWidget{
             this.parameters = params;
       }
       start(){
-          console.log(this.parameters);
       }
 }

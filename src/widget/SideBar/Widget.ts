@@ -6,8 +6,7 @@ class SideMenu extends BaseWidget {
         this.parameters = params;        
     } 
     start(){
-        this.setHtml("<p>success</p>");
-        console.log("sidemenu",this.parameters);
+        this.setHtml(this.template);
     }
     destroy(){
          
