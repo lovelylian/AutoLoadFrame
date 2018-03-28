@@ -14,22 +14,26 @@ var AppX = {
             {
                "name":"topBar",
                "description":"页面顶部菜单条",
-               "url":"../widget/TopBar/Widget"
+               "main":"Widget",
+               "url":"widget/TopBar"
             },
             {
-                "name":"menuBar",
+                "name":"sideBar",
                 "description":"页面左侧菜单栏",
-                "url":"../widget/SideBar/Widget"
+                "main":"Widget",
+                "url":"widget/SideBar"
             },
             {
                 "name":"menuBar",
                 "description":"页面右侧内容区域",
-                "url":"../widget/ContentDiv/Widget"
+                "main":"Widget",
+                "url":"widget/ContentDiv"
             },
             {
                 "name":"footerBar",
                 "description":"页面底部相关权利说明",
-                "url":"../widget/FooterBar/Widget"
+                "main":"Widget",
+                "url":"widget/FooterBar"
             }
         ],
         "menuBarContent":[

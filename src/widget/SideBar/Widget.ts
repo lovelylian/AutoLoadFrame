@@ -1,11 +1,13 @@
 import BaseWidget = require("../../core/BaseWidget.class.js");
 export = SideMenu;
 class SideMenu extends BaseWidget {
-    constructor(parameters) {
-        super(parameters);
+    constructor(params) {
+        super(params);
+        this.parameters = params;        
     } 
     start(){
-        console.log('this is sidemenu');
+        this.setHtml("<p>success</p>");
+        console.log("sidemenu",this.parameters);
     }
     destroy(){
          

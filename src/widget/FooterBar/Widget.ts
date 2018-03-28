@@ -3,8 +3,9 @@ export = FooterBar;
 class FooterBar extends BaseWidget{
       constructor(params){
             super(params);
+            this.parameters = params;
       }
       start(){
-          console.log('test-2');
+          console.log(this.parameters);
       }
 }
