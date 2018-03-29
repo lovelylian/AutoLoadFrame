@@ -44,7 +44,9 @@ var AppX = {
                 "data":[{
                     "id":"shangshoujiangjie",
                     "label":"上手讲解",
-                    "panel":"MenuPanel"
+                    "panel":"MenuPanel",
+                    "modelname":"Tutorial",
+                    "modelurl":"widget"
                 }]
             },
             {
