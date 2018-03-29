@@ -6,5 +6,6 @@ class FooterBar extends BaseWidget{
             this.parameters = params;
       }
       start(){
+            this.setHtml(this.template);
       }
 }
