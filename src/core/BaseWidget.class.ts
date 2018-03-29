@@ -2,7 +2,8 @@ import Base = require("core/Base.class");
 export = BaseWidget;
 class BaseWidget extends Base {
     template:string;  //html模板
-    parameters;
+    AppX:any = window["AppX"]; //配置文件
+    parameters:any; //初始化传递过来的参数
     constructor(parameters) {
         super();
         this.parameters = parameters;

@@ -1,4 +1,3 @@
-import _ = require('lodash');
 import util = require("./Util.class");
 //typescript 里面添加requirejs，让其能在模块内使用
 ///

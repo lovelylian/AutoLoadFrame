@@ -46,7 +46,7 @@ var AppX = {
                     "label":"上手讲解",
                     "panel":"MenuPanel",
                     "modelname":"Tutorial",
-                    "modelurl":"widget"
+                    "modelposition":"widget/"
                 }]
             },
             {

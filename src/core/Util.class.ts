@@ -6,3 +6,9 @@ export function connectHtmlUrl(config){
        return url+main;
 
 }
+
+// 整合模块加载的url地址
+export function connectModelUrl(modelposition:string,modelname:string){
+         modelposition = modelposition.replace(/\/*$/,"/");
+         return modelposition+modelname;
+}
