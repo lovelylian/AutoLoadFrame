@@ -40,7 +40,7 @@ var AppX = {
             {
                 "id":"shiyongshuoming",
                 "label":"使用说明",
-                "icon":"./XXX",//暂时还没找到图片
+                "icon":"widget/SideBar/image/explain.png",//暂时还没找到图片
                 "data":[{
                     "id":"shangshoujiangjie",
                     "label":"上手讲解",
@@ -52,7 +52,7 @@ var AppX = {
             {
                 "id":"shujujiansuo",
                 "label":"数据检索",
-                "icon":"./XXX",//暂时无图片
+                "icon":"widget/SideBar/image/search.png",//暂时无图片
                 "data":[{
                     "id":"shezhipachong",
                     "label":"设置爬虫",
@@ -62,7 +62,7 @@ var AppX = {
             {
                 "id":"dituxianshi",
                 "label":"地图显示",
-                "icon":"./XXX",//暂时无图片
+                "icon":"widget/SideBar/image/map.png",//暂时无图片
                 "data":[{
                     "id":"xianshigongsiweizhi",
                     "label":"显示公司位置",
@@ -72,7 +72,7 @@ var AppX = {
             {
                 "id":"shujuzhanshi",
                 "label":"数据展示",
-                "icon":"./XXX",//暂时无图片
+                "icon":"widget/SideBar/image/show.png",//暂时无图片
                 "data":[{
                     "id":"zhaopinqushi",
                     "label":"招聘趋势",
