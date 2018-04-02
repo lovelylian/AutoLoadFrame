@@ -56,7 +56,9 @@ var AppX = {
                 "data":[{
                     "id":"shezhipachong",
                     "label":"设置爬虫",
-                    "inpanel":"MenuPanel"
+                    "inpanel":"Panel",
+                    "modelname":"Spider",
+                    "modelposition":"widget/"
                 }]
             },
             {
@@ -66,7 +68,9 @@ var AppX = {
                 "data":[{
                     "id":"xianshigongsiweizhi",
                     "label":"显示公司位置",
-                    "panel":"MenuPanel"
+                    "inpanel":"Panel",
+                    "modelname":"Companylocation",
+                    "modelposition":"widget/"
                 }]
             },
             {
@@ -76,7 +80,9 @@ var AppX = {
                 "data":[{
                     "id":"zhaopinqushi",
                     "label":"招聘趋势",
-                    "panel":"MenuPanel"
+                    "inpanel":"Panel",
+                    "modelname":"Trend",
+                    "modelposition":"widget/"
                 }]
             }
 

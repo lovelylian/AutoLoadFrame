@@ -24,7 +24,7 @@ class SideMenu extends BaseWidget {
         menuBarData.forEach(element => {
             html = html + "<li><label for='"+element.id+"'><img src='"+element.icon+"'/>" + element.label + "</label><input type='checkbox' id='"+element.id+"'>";
             element.data.forEach(element => {
-                html_temp = html_temp + "<li "+"data-inpanel="+element.inpanel+">" + element.label + "</li>"
+                html_temp = html_temp + "<li "+"data-inpanel='"+element.inpanel+"' data-id="+element.id+" data-modelname='"+element.modelname+"' data-modelposition='"+element.modelposition+"'>" + element.label + "</li>"
             });
             html_temp = "<ul>" + html_temp + "</ul>";
             html = html + html_temp + "</li>";
@@ -35,7 +35,7 @@ class SideMenu extends BaseWidget {
     }
     // 分析配置文件中菜单栏 对外透明，不暴露
     private analyzeSideBarData() {
-
+  
     }
     // 销毁
     destroy() {
