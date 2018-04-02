@@ -26,7 +26,7 @@ class LoadManager {
           new arguments[i](widgetConfig[i]);
         }
 
-      }.bind(this));
+      });
 
   }
 

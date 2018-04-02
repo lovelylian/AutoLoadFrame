@@ -46,8 +46,7 @@ class BaseWidget extends Base {
 
     // 设置css连接
     setStyleLink(){
-        // $("head").append('<link rel="stylesheet" href="'+this.parameters.url.replace(/\/*$/,"/")+'css/style.css">');
-        var test = $('<link href="./' +this.parameters.url.replace(/\/*$/,"/")+'css/style.css" rel="stylesheet" type="text/css"/>');
-        $($('head')[0]).append(test);
+        var cssLink = $('<link href="./' +this.parameters.url.replace(/\/*$/,"/")+'css/style.css" rel="stylesheet" type="text/css"/>');
+        $($('head')[0]).append(cssLink);
     }
 }
