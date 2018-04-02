@@ -44,7 +44,7 @@ var AppX = {
                 "data":[{
                     "id":"shangshoujiangjie",
                     "label":"上手讲解",
-                    "panel":"MenuPanel",
+                    "inpanel":"Panel",
                     "modelname":"Tutorial",
                     "modelposition":"widget/"
                 }]
@@ -56,7 +56,7 @@ var AppX = {
                 "data":[{
                     "id":"shezhipachong",
                     "label":"设置爬虫",
-                    "panel":"MenuPanel"
+                    "inpanel":"MenuPanel"
                 }]
             },
             {
