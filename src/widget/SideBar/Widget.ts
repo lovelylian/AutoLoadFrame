@@ -29,7 +29,7 @@ class SideMenu extends BaseWidget {
         menuBarData.forEach(element => {
             html = html + "<li><label for='"+element.id+"'><img src='"+element.icon+"'/>" + element.label + "</label><input type='checkbox' id='"+element.id+"'>";
             element.data.forEach(element => {
-                html_temp = html_temp + "<li "+"data-inpanel='"+element.inpanel+"' data-id="+element.id+" data-modelname='"+element.modelname+"' data-modelposition='"+element.modelposition+"' data-label='"+element.label+"'>" + element.label + "</li>"
+                html_temp = html_temp + "<li "+"data-inpanel='"+element.inpanel+"' data-id="+element.id+" data-main='"+element.main+"' data-url='"+element.url+"' data-label='"+element.label+"'>" + element.label + "</li>"
             });
             html_temp = "<ul>" + html_temp + "</ul>";
             html = html + html_temp + "</li>";
@@ -45,8 +45,8 @@ class SideMenu extends BaseWidget {
             // 点击后拿到数据，封装到对应的对象中去;
             var params = {
                 "panel":$(e.currentTarget).data('inpanel'),
-                "modelname":$(e.currentTarget).data("modelname"),
-                "modelposition":$(e.currentTarget).data("modelposition"),
+                "main":$(e.currentTarget).data("main"),
+                "url":$(e.currentTarget).data("url"),
                 "label":$(e.currentTarget).data("label"),
                 "id":$(e.currentTarget).data("id")
             };

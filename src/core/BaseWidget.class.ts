@@ -36,7 +36,7 @@ class BaseWidget extends Base {
                 this.template= data;
             }.bind(this),
             error:function(error){
-                console.log("错误日志",error);
+                console.log("错误日志:",error);
             },
             complete:function(){
                 this.start();

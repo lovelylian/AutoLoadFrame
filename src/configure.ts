@@ -34,6 +34,12 @@ var AppX = {
                 "description":"页面底部相关权利说明",
                 "main":"Widget",
                 "url":"widget/FooterBar"
+            },
+            {
+                "name":"panel",
+                "description":"面板",
+                "main":"Widget",
+                "url":"widget/Panel"
             }
         ],
         "menuBarContent":[
@@ -45,8 +51,8 @@ var AppX = {
                     "id":"shangshoujiangjie",
                     "label":"上手讲解",
                     "inpanel":"Panel",
-                    "modelname":"Tutorial",
-                    "modelposition":"widget/"
+                    "main":"Widget",
+                    "url":"widget/Tutorial"
                 }]
             },
             {
@@ -57,8 +63,8 @@ var AppX = {
                     "id":"shezhipachong",
                     "label":"设置爬虫",
                     "inpanel":"Panel",
-                    "modelname":"Spider",
-                    "modelposition":"widget/"
+                    "main":"Widget",
+                    "url":"widget/Spider"
                 }]
             },
             {
@@ -69,8 +75,8 @@ var AppX = {
                     "id":"xianshigongsiweizhi",
                     "label":"显示公司位置",
                     "inpanel":"Panel",
-                    "modelname":"Companylocation",
-                    "modelposition":"widget/"
+                    "main":"Widget",
+                    "url":"widget/Companylocation"
                 }]
             },
             {
@@ -81,8 +87,8 @@ var AppX = {
                     "id":"zhaopinqushi",
                     "label":"招聘趋势",
                     "inpanel":"Panel",
-                    "modelname":"Trend",
-                    "modelposition":"widget/"
+                    "main":"Widget",
+                    "url":"widget/Trend"
                 }]
             }
 
