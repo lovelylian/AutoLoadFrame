@@ -56,11 +56,22 @@ class SideMenu extends BaseWidget {
     // 加载对应的面板
     choosePanel(params){
         this.configObj = params;
+        var flag = false;
+        this.AppX.PanelProcessorControl.forEach(element => {
+            if(element==params.id){
+                flag=true;
+            }
+        });
+        // 管理进程，房子重复添加
+        if(flag){
+            return;
+        }
 
         if(params.panel=='Panel'){
               require(["widget/Panel/Widget"],function(){ 
                    new arguments[0](this.AppX.appConfig.panel,this.configObj);
-              }.bind(this));
+                   this.AppX.PanelProcessorControl.push(this.configObj.id);
+                }.bind(this));
         }else if(params.panel=='halfPanel'){
 
         }else if(params.panel=='fullPanel'){

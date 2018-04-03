@@ -96,6 +96,8 @@ var AppX = {
         }
 
     },
+    // 面板进程控制
+    PanelProcessorControl:[],
     runtimeConfig:{
         popup:null,
         toast:null,

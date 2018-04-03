@@ -10,7 +10,6 @@ class Panel extends BaseWidget{
       //  先加载面板
        super(panel_params);
        this.widgetParams = params;
-       console.log(">>>",params);
      }
      start(){
       //  将面板加载进入该去的位置
