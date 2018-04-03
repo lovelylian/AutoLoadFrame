@@ -34,12 +34,6 @@ var AppX = {
                 "description":"页面底部相关权利说明",
                 "main":"Widget",
                 "url":"widget/FooterBar"
-            },
-            {
-                "name":"panel",
-                "description":"面板",
-                "main":"Widget",
-                "url":"widget/Panel"
             }
         ],
         "menuBarContent":[
@@ -93,7 +87,13 @@ var AppX = {
             }
 
 
-        ]
+        ],
+        "panel":{
+            "name":"panel",
+            "description":"面板",
+            "main":"Widget",
+            "url":"widget/Panel"
+        }
 
     },
     runtimeConfig:{

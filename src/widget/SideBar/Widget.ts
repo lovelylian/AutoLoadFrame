@@ -56,9 +56,10 @@ class SideMenu extends BaseWidget {
     // 加载对应的面板
     choosePanel(params){
         this.configObj = params;
+
         if(params.panel=='Panel'){
-              require(["widget/Panel/Widget"],function(){
-                   new arguments[0](this.configObj);
+              require(["widget/Panel/Widget"],function(){ 
+                   new arguments[0](this.AppX.appConfig.panel,this.configObj);
               }.bind(this));
         }else if(params.panel=='halfPanel'){
 
