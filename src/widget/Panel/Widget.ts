@@ -34,7 +34,7 @@ class Panel extends BaseWidget {
         $('.widget-contentdiv').empty();
       } else if (action == 'min') {
         // 缩小操作
-
+        
       }else if(action == 'max'){
         // 最大化操作
 
