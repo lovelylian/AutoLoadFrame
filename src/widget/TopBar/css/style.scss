@@ -1,11 +1,25 @@
-.widget-topBar{
+.widget-topBar {
     height: 50px;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background: red;
-
-    line-height: 50px;
-    text-align: center;
+    background: rgb(82, 162, 214);
+    a {
+        float: left;
+        line-height: 50px;
+    }
+    div {
+        float: right;
+        margin-right: 15px;
+        a {
+            line-height: 50px;
+            text-decoration: none;
+            margin-right: 5px;
+        }
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
 }
