@@ -12,6 +12,7 @@ class Panel extends BaseWidget {
     super(panel_params);
     this.widgetParams = params;
   }
+
   start() {
     //  将面板加载进入该去的位置
     this.setHtml(_.template(this.template)({ 'title': this.widgetParams.label }), ".widget-contentdiv");
@@ -20,6 +21,7 @@ class Panel extends BaseWidget {
     // 动作函数初始化
     this.panelOperation();
   }
+
   private loadFunctionWidget() {
     require([Util.connectHtmlUrl(this.widgetParams)], function () {
       new arguments[0](this.widgetParams);

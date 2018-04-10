@@ -2,6 +2,8 @@
 var hostUrl = location.href.replace("/\/+$/", "");
 var AppX = {
     hostUrl: hostUrl,
+    // css模块的文件目录及名称
+    css:'css/style.css',
     appConfig: {
         // infoBar 包含底部title 及相应的logo图标和用户图标
         "infoBar": {
@@ -45,7 +47,9 @@ var AppX = {
                     "id":"shangshoujiangjie",
                     "label":"上手讲解",
                     "inpanel":"Panel",
+                    // js和html模块名
                     "main":"Widget",
+                    // 模块地址
                     "url":"widget/Tutorial"
                 }]
             },
@@ -92,11 +96,12 @@ var AppX = {
             "name":"panel",
             "description":"面板",
             "main":"Widget",
-            "url":"widget/Panel"
+            "url":"widget/Panel",
+            "conmentarea":""
         }
 
     },
-    // 面板进程控制
+    // 面板是否已经存在
     PanelProcessorControl:[],
     runtimeConfig:{
         popup:null,

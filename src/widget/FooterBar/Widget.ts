@@ -3,7 +3,7 @@ export = FooterBar;
 class FooterBar extends BaseWidget{
       constructor(params){
             super(params);
-            this.parameters = params;
+            this.modelConfigParam = params;
       }
       start(){
             this.setHtml(this.template);

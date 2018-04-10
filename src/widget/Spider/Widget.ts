@@ -5,6 +5,6 @@ class Spider extends BaseWidget{
        super(params);
    }
    start(){
-       this.setHtml(this.template,".panel_content")
+       this.setHtml(this.template);
    }
 }
