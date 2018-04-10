@@ -2,7 +2,7 @@
  * @Author: sekem 
  * @Date: 2018-04-10 14:05:23 
  * @Last Modified by: sekem
- * @Last Modified time: 2018-04-10 14:06:19
+ * @Last Modified time: 2018-04-10 15:12:16
  */
 import util = require("./Util.class");
 
@@ -18,7 +18,7 @@ class LoadManager {
   // 加载配置文件
   public load(config) {
     if (!config) {
-      console.log("没有配置文件！");
+      console.log("没有配置文件!请查看相关配置文件");
       return;
     }
     // 提取需要加载的参数数组

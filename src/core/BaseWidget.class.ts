@@ -2,7 +2,7 @@
  * @Author: sekem 
  * @Date: 2018-04-10 13:50:40 
  * @Last Modified by: sekem
- * @Last Modified time: 2018-04-10 15:07:58
+ * @Last Modified time: 2018-04-10 16:10:20
  */
 import Base = require("core/Base.class");
 export = BaseWidget;
@@ -24,7 +24,7 @@ class BaseWidget extends Base {
     // 模板的字符串形式
     template: string;
     // 配置文件中的配置
-    AppX: appx = window["AppX"]; //配置文件
+    AppX = window["AppX"]; //配置文件
     // 建立组件时传递过来的配置参数
     modelConfigParam: any;
 

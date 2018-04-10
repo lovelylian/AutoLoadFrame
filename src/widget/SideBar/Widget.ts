@@ -16,9 +16,6 @@ class SideMenu extends BaseWidget {
         var html = this.loadSideBarConfigData();
         $(".widget-sideBar").append(html);
         this.chooseContent();
-        // var text = '<% jq.each(users, function(user) { %><li><%- user %></li><% }); %>';
-        // var compiled = _.template(text, { 'imports': { 'jq': jQuery } });
-        //  console.log(compiled({ 'users': ['fred', 'barney'] }));
     }
 
     // 加载菜单栏配置数据(后期可以优化)
@@ -66,7 +63,6 @@ class SideMenu extends BaseWidget {
         if(flag){
             return;
         }
-
         if(params.panel=='Panel'){
               require(["widget/Panel/Widget"],function(){ 
                    new arguments[0](this.AppX.appConfig.panel,this.configObj);

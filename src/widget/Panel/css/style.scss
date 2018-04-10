@@ -4,21 +4,29 @@
     // height: 100%;
     .panel_title {
         width: 100%;
-        height: 25px;
-        line-height: 25px;
-        text-align: left;
+        height: 35px;
         padding-left: 5px;
         background: rgb(58, 177, 58);
-        span {
+        div:first-child {
             float: left;
-            margin-left: 10px;
-            line-height: 25px;
+            height: 35px;
+            width: 100px;
+            span {
+                float: left;
+                height: 35px;
+                line-height: 35px;
+            }
+            img {
+                float: left;
+                width: 35px;
+                height: 35px;
+            }
         }
-        div {
+        div:last-child {
             float: right;
             img {
-                width: 25px;
-                height: 25px;
+                width: 35px;
+                height: 35px;
                 margin-right: 3px;
             }
         }

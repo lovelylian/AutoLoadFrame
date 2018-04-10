@@ -101,7 +101,7 @@ var AppX = {
         }
 
     },
-    // 面板是否已经存在
+    // 面板是否已经存在 初始化的时候初始值
     PanelProcessorControl:[],
     runtimeConfig:{
         popup:null,
