@@ -93,6 +93,7 @@ var AppX = {
 
         ],
         "panel":{
+            "active":"",
             "name":"panel",
             "description":"面板",
             "main":"Widget",
@@ -101,7 +102,7 @@ var AppX = {
         }
 
     },
-    // 面板是否已经存在 初始化的时候初始值
+    // 该内容是否已经存在 初始化的时候初始值
     PanelProcessorControl:[],
     runtimeConfig:{
         popup:null,

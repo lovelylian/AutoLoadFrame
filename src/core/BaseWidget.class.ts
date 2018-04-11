@@ -10,15 +10,15 @@ export = BaseWidget;
  * 
  * 限制配置文件的更改引发的错误，
  * 如果配置文件发送更改，接口中应该声明，
- * 不然会报错
+ * 不然会报错(暂时屏蔽，稳定后使用)
  * @interface appx
  */
-interface appx {
-    hostUrl: string;
-    appConfig: any;
-    css: string;
-    PanelProcessorControl: Array<string>;
-}
+// interface appx {
+//     hostUrl: string;
+//     appConfig: any;
+//     css: string;
+//     PanelProcessorControl: Array<string>;
+// }
 
 class BaseWidget extends Base {
     // 模板的字符串形式
